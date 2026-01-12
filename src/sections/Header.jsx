@@ -1,11 +1,10 @@
 import React from "react";
 
-const Home = () => {
+const Header = () => {
   return (
     <>
       <section
-        id="home"
-        className="hero-pattern h-screen min-h-[600px] flex items-center justify-center text-white relative"
+        className="hero-pattern h-screen min-h-150 flex items-center justify-center text-white bg-dark relative"
       >
         <div className="container mx-auto px-4 text-center z-10 pt-16">
           <span className="bg-secondary text-white px-3 py-1 text-sm font-bold uppercase tracking-wider rounded mb-4 inline-block animate-fade-in-up">
@@ -21,7 +20,7 @@ const Home = () => {
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <a
-              href="#portfolio"
+              
               className="px-8 py-4 bg-secondary text-white font-bold rounded hover:bg-yellow-500 transition shadow-lg flex items-center justify-center gap-2"
             >
               <i className="fa-solid fa-eye"></i> Lihat Karya Kami
@@ -29,7 +28,7 @@ const Home = () => {
             <a
               href="https://wa.me/6285142611363?text=Halo,%20saya%20ingin%20konsultasi%20mengenai%20proyek%20bangunan."
               target="_blank"
-              class="px-8 py-4 border-2 border-white text-white font-bold rounded hover:bg-white hover:text-dark transition flex items-center justify-center gap-2"
+              className="px-8 py-4 border-2 border-white text-white font-bold rounded hover:bg-white hover:text-dark transition flex items-center justify-center gap-2"
             >
               <i className="fa-brands fa-whatsapp"></i> Konsultasi Gratis
             </a>
@@ -37,7 +36,7 @@ const Home = () => {
         </div>
         {/* <!-- Scroll Down Indicator --> */}
         <a
-          href="#about"
+          
           className="absolute bottom-10 animate-bounce text-white text-2xl opacity-70"
         >
           <i className="fa-solid fa-chevron-down"></i>
@@ -47,4 +46,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Header;
