@@ -6,9 +6,11 @@ import Portfolio from '../sections/Portfolio'
 import Statistic from '../sections/Statistic'
 import Contact from '../sections/Contact'
 import Footer from '../sections/Footer'
+import ScrollTop from '../content/ScrollTop'
 const Home = () => {
   return (
     <>
+    <ScrollTop/>
     <Header/>
     <About/>
     <Services/>

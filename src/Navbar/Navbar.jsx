@@ -1,25 +1,14 @@
-import React from "react";
-import { useNavigate, NavLink, Outlet } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
+import React,{useState} from "react";
+import { useNavigate, NavLink, Outlet} from "react-router-dom";
+import { FaBars,FaBuilding } from "react-icons/fa";
+import Whatsapp from "../sections/Whatsapp"
 const Navbar = () => {
   const navigate = useNavigate();
-  // const btn = document.getElementById("mobile-menu-btn");
-  const menu = document.getElementById("mobile-menu");
-  const mobileLinks = document.querySelectorAll(".mobile-link");
-
-  function handleBtn() {
-    menu.classList.toggle("hidden");
+  const [isOpen, setIsOpen] = useState(false);
+  
+  function handleBtn(){
+    setIsOpen(!isOpen);
   }
-  // btn.addEventListener("click", () => {
-  //   menu.classList.toggle("hidden");
-  // });
-
-  mobileLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      menu.classList.add("hidden");
-    });
-  });
-
   return (
     <>
       <nav className="bg-white shadow-md fixed w-full z-50 transition-all duration-300">
@@ -31,10 +20,10 @@ const Navbar = () => {
               onClick={() => navigate("/")}
             >
               <div className="w-10 h-10 bg-secondary flex items-center justify-center rounded text-white font-bold text-xl">
-                <i className="fa-solid fa-building"></i>
+                <FaBuilding/>
               </div>
               <span className="font-heading text-2xl font-bold text-primary tracking-wide">
-                TUKANG BANGUN DUMELING
+                CV BUMI SARI HIJAU
               </span>
             </a>
 
@@ -59,7 +48,7 @@ const Navbar = () => {
 
             {/* <!-- Mobile Menu Button --> */}
             <button
-              onClick={() => handleBtn}
+              onClick={handleBtn}
               id="mobile-menu-btn"
               className="md:hidden text-2xl text-gray-700 focus:outline-none"
             >
@@ -71,27 +60,38 @@ const Navbar = () => {
         {/* <!-- Mobile Menu Dropdown --> */}
         <div
           id="mobile-menu"
-          className="block md:hidden bg-white border-t absolute w-full shadow-xl"
+          className={`${isOpen ? "hidden" : "block"} md:hidden bg-white border-t absolute w-full shadow-xl`}
+          onClick={handleBtn}
+          // className="hidden md:hidden bg-white border-t absolute w-full shadow-xl"
         >
           <div className="flex flex-col p-4 space-y-4 font-medium">
-            <a className="mobile-link text-gray-600 hover:text-primary">
-              Beranda
-            </a>
-            <a className="mobile-link text-gray-600 hover:text-primary">
-              Tentang Kami
-            </a>
-            <a className="mobile-link text-gray-600 hover:text-primary">
-              Layanan
-            </a>
-            <a className="mobile-link text-gray-600 hover:text-primary">
-              Portofolio
-            </a>
-            <a className="mobile-link px-4 py-2 bg-primary text-white rounded text-center">
+            <NavLink to={"/"}>
+              <p className="mobile-link text-gray-600 hover:text-primary">
+                Beranda
+              </p>
+            </NavLink>
+            <NavLink to={"about"}>
+              <p className="mobile-link text-gray-600 hover:text-primary">
+                Tentang Kami
+              </p>
+            </NavLink>
+            <NavLink to={"service"}>
+              <p className="mobile-link text-gray-600 hover:text-primary">
+                Layanan
+              </p>
+            </NavLink>
+            <NavLink to={"portfolio"}>
+              <p className="mobile-link text-gray-600 hover:text-primary">
+                Portofolio
+              </p>
+            </NavLink>
+            <p className="mobile-link px-4 py-2 bg-primary text-white rounded text-center">
               Hubungi Kami
-            </a>
+            </p>
           </div>
         </div>
       </nav>
+      <Whatsapp/>
       <Outlet />
     </>
   );
