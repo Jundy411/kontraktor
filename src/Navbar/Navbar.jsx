@@ -1,12 +1,12 @@
-import React,{useState} from "react";
-import { useNavigate, NavLink, Outlet} from "react-router-dom";
-import { FaBars,FaBuilding } from "react-icons/fa";
-import Whatsapp from "../sections/Whatsapp"
+import React, { useState } from "react";
+import { useNavigate, NavLink, Outlet } from "react-router-dom";
+import { FaBars, FaBuilding } from "react-icons/fa";
+import Whatsapp from "../sections/Whatsapp";
 const Navbar = () => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
-  
-  function handleBtn(){
+
+  function handleBtn() {
     setIsOpen(!isOpen);
   }
   return (
@@ -20,7 +20,7 @@ const Navbar = () => {
               onClick={() => navigate("/")}
             >
               <div className="w-10 h-10 bg-secondary flex items-center justify-center rounded text-white font-bold text-xl">
-                <FaBuilding/>
+                <FaBuilding />
               </div>
               <span className="font-heading text-2xl font-bold text-primary tracking-wide">
                 CV BUMI SARI HIJAU
@@ -38,10 +38,17 @@ const Navbar = () => {
               <NavLink to={"/service"}>
                 <p className="hover:text-primary transition">Layanan</p>
               </NavLink>
-              <NavLink to={"portfolio"}>
+              <NavLink to={"/portfolio"}>
                 <p className="hover:text-primary transition">Portofolio</p>
               </NavLink>
-              <p className="px-5 py-2 bg-primary text-white rounded hover:bg-blue-800 transition shadow-lg transform hover:-translate-y-0.5 cursor-pointer">
+              <p
+                className="px-5 py-2 bg-primary text-white rounded hover:bg-blue-800 transition shadow-lg transform hover:-translate-y-0.5 cursor-pointer"
+                onClick={() =>
+                  window.open(
+                    "https://wa.me/6285142611363?text=Halo,%20saya%20tertarik%20menggunakan%20jasa%20kontraktor%20Tukang%20Bangunan%20Dumeling."
+                  )
+                }
+              >
                 Hubungi Kami
               </p>
             </div>
@@ -60,7 +67,9 @@ const Navbar = () => {
         {/* <!-- Mobile Menu Dropdown --> */}
         <div
           id="mobile-menu"
-          className={`${isOpen ? "hidden" : "block"} md:hidden bg-white border-t absolute w-full shadow-xl`}
+          className={`${
+            isOpen ? "hidden" : "block"
+          } block md:hidden bg-white border-t absolute w-full shadow-xl`}
           onClick={handleBtn}
           // className="hidden md:hidden bg-white border-t absolute w-full shadow-xl"
         >
@@ -85,13 +94,20 @@ const Navbar = () => {
                 Portofolio
               </p>
             </NavLink>
-            <p className="mobile-link px-4 py-2 bg-primary text-white rounded text-center">
+            <p
+              className="mobile-link px-4 py-2 bg-primary text-white rounded text-center"
+              onClick={() =>
+                window.open(
+                  "https://wa.me/6285142611363?text=Halo,%20saya%20tertarik%20menggunakan%20jasa%20kontraktor%20Tukang%20Bangunan%20Dumeling."
+                )
+              }
+            >
               Hubungi Kami
             </p>
           </div>
         </div>
       </nav>
-      <Whatsapp/>
+      <Whatsapp />
       <Outlet />
     </>
   );
