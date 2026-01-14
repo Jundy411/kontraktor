@@ -4,7 +4,7 @@ import About from '../sections/About'
 import Services from '../sections/Services'
 import Portfolio from '../sections/Portfolio'
 import Statistic from '../sections/Statistic'
-import Contact from '../sections/Contact'
+// import Contact from '../sections/Contact'
 import Footer from '../sections/Footer'
 import ScrollTop from '../content/ScrollTop'
 const Home = () => {
@@ -14,9 +14,9 @@ const Home = () => {
     <Header/>
     <About/>
     <Services/>
-    <Portfolio/>
     <Statistic/>
-    <Contact/>
+    <Portfolio/>
+    {/* <Contact/> */}
     <Footer/>
     </>
   )

@@ -1,4 +1,12 @@
 import React from "react";
+import {
+  FaHouse,
+  FaHammer,
+  FaCompassDrafting,
+  FaTrowelBricks,
+  FaCouch,
+  FaClipboardCheck,
+} from "react-icons/fa6";
 
 const Services = () => {
   return (
@@ -18,7 +26,7 @@ const Services = () => {
             {/* <!-- Service 1 --> */}
             <div className="service-card bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 border-b-4 border-transparent hover:border-secondary group">
               <div className="icon-box w-14 h-14 bg-blue-50 text-primary rounded-full flex items-center justify-center text-2xl mb-6 transition duration-300">
-                <i className="fa-solid fa-house-chimney"></i>
+                <FaHouse />
               </div>
               <h3 className="text-xl font-bold text-dark mb-3 group-hover:text-primary transition">
                 Bangun Baru
@@ -32,7 +40,7 @@ const Services = () => {
             {/* <!-- Service 2 --> */}
             <div className="service-card bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 border-b-4 border-transparent hover:border-secondary group">
               <div className="icon-box w-14 h-14 bg-blue-50 text-primary rounded-full flex items-center justify-center text-2xl mb-6 transition duration-300">
-                <i className="fa-solid fa-hammer"></i>
+                <FaHammer />
               </div>
               <h3 className="text-xl font-bold text-dark mb-3 group-hover:text-primary transition">
                 Renovasi
@@ -46,7 +54,7 @@ const Services = () => {
             {/* <!-- Service 3 --> */}
             <div className="service-card bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 border-b-4 border-transparent hover:border-secondary group">
               <div className="icon-box w-14 h-14 bg-blue-50 text-primary rounded-full flex items-center justify-center text-2xl mb-6 transition duration-300">
-                <i className="fa-solid fa-compass-drafting"></i>
+                <FaCompassDrafting />
               </div>
               <h3 className="text-xl font-bold text-dark mb-3 group-hover:text-primary transition">
                 Desain & Arsitek
@@ -60,7 +68,7 @@ const Services = () => {
             {/* <!-- Service 4 --> */}
             <div className="service-card bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 border-b-4 border-transparent hover:border-secondary group">
               <div className="icon-box w-14 h-14 bg-blue-50 text-primary rounded-full flex items-center justify-center text-2xl mb-6 transition duration-300">
-                <i className="fa-solid fa-trowel-bricks"></i>
+                <FaTrowelBricks />
               </div>
               <h3 className="text-xl font-bold text-dark mb-3 group-hover:text-primary transition">
                 Pekerjaan Sipil
@@ -74,7 +82,8 @@ const Services = () => {
             {/* <!-- Service 5 --> */}
             <div className="service-card bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 border-b-4 border-transparent hover:border-secondary group">
               <div className="icon-box w-14 h-14 bg-blue-50 text-primary rounded-full flex items-center justify-center text-2xl mb-6 transition duration-300">
-                <i className="fa-solid fa-couch"></i>
+                
+                <FaCouch />
               </div>
               <h3 className="text-xl font-bold text-dark mb-3 group-hover:text-primary transition">
                 Interior Custom
@@ -88,7 +97,7 @@ const Services = () => {
             {/* <!-- Service 6 --> */}
             <div className="service-card bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 border-b-4 border-transparent hover:border-secondary group">
               <div className="icon-box w-14 h-14 bg-blue-50 text-primary rounded-full flex items-center justify-center text-2xl mb-6 transition duration-300">
-                <i className="fa-solid fa-clipboard-check"></i>
+                <FaClipboardCheck />
               </div>
               <h3 className="text-xl font-bold text-dark mb-3 group-hover:text-primary transition">
                 Konsultasi RAB

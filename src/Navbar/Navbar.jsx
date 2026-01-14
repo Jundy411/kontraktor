@@ -16,7 +16,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center h-20">
             {/* <!-- Logo --> */}
             <a
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 cursor-pointer"
               onClick={() => navigate("/")}
             >
               <div className="w-10 h-10 bg-secondary flex items-center justify-center rounded text-white font-bold text-xl">
@@ -41,7 +41,7 @@ const Navbar = () => {
               <NavLink to={"portfolio"}>
                 <p className="hover:text-primary transition">Portofolio</p>
               </NavLink>
-              <p className="px-5 py-2 bg-primary text-white rounded hover:bg-blue-800 transition shadow-lg transform hover:-translate-y-0.5">
+              <p className="px-5 py-2 bg-primary text-white rounded hover:bg-blue-800 transition shadow-lg transform hover:-translate-y-0.5 cursor-pointer">
                 Hubungi Kami
               </p>
             </div>

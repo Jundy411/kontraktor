@@ -1,4 +1,5 @@
 import React from "react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Whatsapp = () => {
   return (
@@ -15,7 +16,7 @@ const Whatsapp = () => {
         <div className="relative">
           <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-75"></div>
           <div class="relative bg-green-500 w-14 h-14 rounded-full flex items-center justify-center shadow-lg text-white text-3xl hover:bg-green-600 transition transform hover:-translate-y-1">
-            <i className="fa-brands fa-whatsapp"></i>
+            <FaWhatsapp/>
           </div>
           {/* <!-- Tooltip --> */}
           <div className="absolute right-full mr-4 top-1/2 transform -translate-y-1/2 bg-white text-gray-800 px-3 py-1 rounded shadow-md text-sm font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition pointer-events-none">
