@@ -8,6 +8,7 @@ import Statistic from '../sections/Statistic'
 import Footer from '../sections/Footer'
 import ScrollTop from '../content/ScrollTop'
 import Address from '../sections/Address'
+import Sponsor from '../sections/Sponsor'
 const Home = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const Home = () => {
     <Services/>
     <Statistic/>
     <Portfolio/>
+    <Sponsor/>
     <Address/>
     {/* <Contact/> */}
     <Footer/>

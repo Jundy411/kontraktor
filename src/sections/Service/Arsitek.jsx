@@ -13,7 +13,7 @@ const Arsitek = () => {
             <div className="lg:w-1/2 relative">
               <div className="relative rounded-lg overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Tim Konstruksi"
                   className="w-full h-auto object-cover"
                 />

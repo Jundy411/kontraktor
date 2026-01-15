@@ -1,9 +1,8 @@
 import React from 'react'
+import Footer from '../Footer'
 import ScrollTop from '../../content/ScrollTop'
 import Blank from '../Blank'
-import Footer from '../Footer'
-
-const Konsultasi = () => {
+const ProjectRumah = () => {
   return (
     <>
     <ScrollTop/>
@@ -14,7 +13,7 @@ const Konsultasi = () => {
             <div className="lg:w-1/2 relative">
               <div className="relative rounded-lg overflow-hidden shadow-2xl">
                 <img
-                  src="https://plus.unsplash.com/premium_photo-1661908759956-93c29efea72b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://images.unsplash.com/photo-1636367393690-1f07c7413851?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Tim Konstruksi"
                   className="w-full h-auto object-cover"
                 />
@@ -31,7 +30,7 @@ const Konsultasi = () => {
                 Layanan Kami
               </h4>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-6">
-                Menerima Konsultasi
+                Membangun Bangunan Baru
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 <strong>CV Bumi Sari Hijau </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias obcaecati, iste blanditiis animi nisi beatae, sapiente, temporibus odio sunt voluptatem? Deserunt perferendis doloribus pariatur vitae odio esse sed aliquid error. Nisi quibusdam fuga facere? Reprehenderit laudantium non quam voluptatum provident consectetur quas architecto porro praesentium, maiores numquam vel dolores!
@@ -65,9 +64,9 @@ const Konsultasi = () => {
           </div>
         </div>
       </section>
-    <Footer/>
+      <Footer/>
     </>
   )
 }
 
-export default Konsultasi
+export default ProjectRumah

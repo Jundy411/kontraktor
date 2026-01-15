@@ -2,35 +2,17 @@ import React from "react";
 
 const Address = () => {
   const urlMap =
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.857311195339!2d110.33352344285275!3d-7.590505308948826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a61836f2211cb%3A0x723b7ea623da07ef!2sDewi%20Suba!5e0!3m2!1sid!2sid!4v1695879611797!5m2!1sid!2sid";
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.9629145816643!2d109.02071148466682!3d-6.849019536625204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb03eff414865%3A0x1e022dbfad8faf39!2sINDOMARET%20SAWOJAJAR!5e1!3m2!1sen!2sid!4v1768445302941!5m2!1sen!2sid";
   return (
     <>
-      <section id="about" className="py-20 bg-white">
+      <section id="about" className="py-20 bg-light">
+       
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="lg:w-1/2 relative">
-              <div className="relative rounded-lg overflow-hidden shadow-2xl">
-                <img
-                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Tim Konstruksi"
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-              {/* <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded shadow-xl border-l-4 border-secondary hidden md:block">
-                <p className="text-4xl font-heading font-bold text-primary">15+</p>
-                <p className="text-gray-600 text-sm font-medium">
-                  Tahun Pengalaman
-                </p>
-              </div> */}
-            </div>
-            <iframe
-              title="lokasi"
-              src={`${urlMap}`}
-              className="w-full h-[40vh] rounded-lg shadow-[0px_0px_10px_2px_#00000024]"
-            />
+            
             <div className="lg:w-1/2">
               <h4 className="text-secondary font-bold uppercase tracking-wider mb-2">
-                Layanan Kami
+                Lokasi Kami
               </h4>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-6">
                 Membangun Bangunan Baru
@@ -51,6 +33,12 @@ const Address = () => {
                 minus omnis voluptate.
               </p>
             </div>
+            <iframe
+              title="lokasi"
+              src={`${urlMap}`}
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              className="w-full lg:w-1/2 h-[70vh] rounded-lg shadow-[0px_0px_10px_2px_#00000024]"
+            />
           </div>
         </div>
       </section>
