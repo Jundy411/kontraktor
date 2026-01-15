@@ -32,14 +32,14 @@ const Navbar = () => {
               <NavLink to={"/"}>
                 <p className="hover:text-primary transition">Beranda</p>
               </NavLink>
-              <NavLink to={"/about"}>
-                <p className="hover:text-primary transition">Tentang Kami</p>
-              </NavLink>
               <NavLink to={"/service"}>
                 <p className="hover:text-primary transition">Layanan</p>
               </NavLink>
               <NavLink to={"/portfolio"}>
                 <p className="hover:text-primary transition">Portofolio</p>
+              </NavLink>
+              <NavLink to={"/galeri"}>
+                <p className="hover:text-primary transition">Galeri</p>
               </NavLink>
               <p
                 className="px-5 py-2 bg-primary text-white rounded hover:bg-blue-800 transition shadow-lg transform hover:-translate-y-0.5 cursor-pointer"
@@ -68,8 +68,8 @@ const Navbar = () => {
         <div
           id="mobile-menu"
           className={`${
-            isOpen ? "hidden" : "block"
-          } block md:hidden bg-white border-t absolute w-full shadow-xl`}
+            isOpen ? "block" : "hidden"
+          } md:hidden bg-white border-t absolute w-full shadow-xl`}
           onClick={handleBtn}
           // className="hidden md:hidden bg-white border-t absolute w-full shadow-xl"
         >
@@ -77,11 +77,6 @@ const Navbar = () => {
             <NavLink to={"/"}>
               <p className="mobile-link text-gray-600 hover:text-primary">
                 Beranda
-              </p>
-            </NavLink>
-            <NavLink to={"about"}>
-              <p className="mobile-link text-gray-600 hover:text-primary">
-                Tentang Kami
               </p>
             </NavLink>
             <NavLink to={"service"}>
@@ -94,6 +89,9 @@ const Navbar = () => {
                 Portofolio
               </p>
             </NavLink>
+            <NavLink to={"/galeri"}>
+                <p className="hover:text-primary transition">Galeri</p>
+              </NavLink>
             <p
               className="mobile-link px-4 py-2 bg-primary text-white rounded text-center"
               onClick={() =>

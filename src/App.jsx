@@ -6,6 +6,12 @@ import Home from "./page/Home";
 import AboutUs from "./page/AboutUs";
 import Service from "./page/Service";
 import PortfolioPage from "./page/PortfolioPage";
+import BangunanBaru from "./sections/Service/BangunanBaru";
+import Renovasi from "./sections/Service/Renovasi";
+import Arsitek from "./sections/Service/Arsitek";
+import Sipil from "./sections/Service/Sipil";
+import Interior from "./sections/Service/Interior";
+import Konsultasi from "./sections/Service/Konsultasi";
 const routeList = createBrowserRouter([
   {
     path: "/",
@@ -16,16 +22,40 @@ const routeList = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "about",
-        element: <AboutUs />,
-      },
-      {
         path: "service",
         element: <Service />,
       },
       {
+        path:"/bangunan-baru",
+        element:<BangunanBaru/>
+      },
+      {
+        path:"/renovasi",
+        element:<Renovasi/>
+      },
+      {
+        path:"/arsitek",
+        element:<Arsitek/>
+      },
+      {
+        path:"/sipil",
+        element:<Sipil/>
+      },
+      {
+        path:"/interior",
+        element:<Interior/>
+      },
+      {
+        path:"/konsultasi",
+        element:<Konsultasi/>
+      },
+      {
         path: "portfolio",
         element: <PortfolioPage />,
+      },
+      {
+        path: "galeri",
+        element: <AboutUs />,
       },
     ],
   },
