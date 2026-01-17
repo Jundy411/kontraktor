@@ -1,34 +1,34 @@
-import React from 'react'
-import Header from '../sections/Header'
-import About from '../sections/About'
+import React from "react";
+import Header from "../sections/Home/Header";
+import About from "../sections/Home/About";
 // import Services from '../sections/Service/Services'
 
-import Statistic from '../sections/Statistic'
+import Statistic from "../sections/Home/Statistic";
 // import Contact from '../sections/Contact'
-import Footer from '../sections/Footer'
-import ScrollTop from '../content/ScrollTop'
-import Address from '../sections/Address'
-import Sponsor from '../sections/Sponsor'
-import Accordion from '../sections/Accordion'
-import TestimonialPage from '../sections/Testimonials'
+import Footer from "../sections/Footer";
+import ScrollTop from "../content/ScrollTop";
+import Address from "../sections/Home/Address";
+import Sponsor from "../sections/Home/Sponsor";
+import Accordion from "../sections/Home/Accordion";
+import TestimonialPage from "../sections/Home/Testimonials";
 // import Portfolio from '../sections/Portfolio/Portfolio'
 const Home = () => {
   return (
     <>
-    <ScrollTop/>
-    <Header/>
-    <About/>
-    {/* <Services/> */}
-    <Statistic/>
-    <Accordion/>
-    {/* <Portfolio/> */}
-    <Sponsor/>
-    <TestimonialPage/>
-    <Address/>
-    {/* <Contact/> */}
-    <Footer/>
+      <ScrollTop />
+      <Header />
+      <About />
+      {/* <Services/> */}
+      <Statistic />
+      <Accordion />
+      {/* <Portfolio/> */}
+      <Sponsor />
+      <TestimonialPage />
+      <Address />
+      {/* <Contact/> */}
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -19,7 +19,7 @@ const Header = () => {
             dengan standar kualitas terbaik, tepat waktu, dan transparan.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <NavLink to={"service"}>
+            <NavLink to={"portfolio"}>
               <a className="px-8 py-4 bg-secondary text-white font-bold rounded hover:bg-yellow-500 transition shadow-lg flex items-center justify-center gap-2 cursor-pointer">
                 <FaEye /> Lihat Karya Kami
               </a>

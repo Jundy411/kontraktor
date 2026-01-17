@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 const Portfolio = () => {
   return (
     <>
-      <section id="portfolio" className="py-20 bg-white">
+      <section id="portfolio" className="py-20 bg-light">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h4 className="text-secondary font-bold uppercase tracking-wider mb-2">
-              Galeri Proyek
+              Portfolio Kami
             </h4>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark">
               Karya Terbaru Kami
@@ -20,7 +20,7 @@ const Portfolio = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* <!-- Project 1 --> */}
-            <NavLink to={"rumah"}>
+            <NavLink to={"/rumah"}>
               <div className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-64">
                 <img
                   src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -37,7 +37,7 @@ const Portfolio = () => {
             </NavLink>
 
             {/* <!-- Project 2 --> */}
-            <NavLink to={"rumah"}>
+            <NavLink to={"/rumah"}>
               <div className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-64">
                 <img
                   src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
@@ -54,7 +54,7 @@ const Portfolio = () => {
             </NavLink>
 
             {/* <!-- Project 3 --> */}
-            <NavLink to={"rumah"}>
+            <NavLink to={"/rumah"}>
               <div className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-64">
                 <img
                   src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
@@ -71,7 +71,7 @@ const Portfolio = () => {
             </NavLink>
 
             {/* <!-- Project 4 --> */}
-            <NavLink to={"rumah"}>
+            <NavLink to={"/rumah"}>
               <div className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-64">
                 <img
                   src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
@@ -87,7 +87,7 @@ const Portfolio = () => {
               </div>
             </NavLink>
             {/* <!-- Project 5 --> */}
-            <NavLink to={"rumah"}>
+            <NavLink to={"/rumah"}>
               <div className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-64">
                 <img
                   src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
@@ -103,7 +103,7 @@ const Portfolio = () => {
               </div>
             </NavLink>
             {/* <!-- Project 6 --> */}
-            <NavLink to={"rumah"}>
+            <NavLink to={"/rumah"}>
               <div className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-64">
                 <img
                   src="https://images.unsplash.com/photo-1595846519845-68e298c2edd8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"

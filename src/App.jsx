@@ -56,7 +56,7 @@ const routeList = createBrowserRouter([
         element: <PortfolioPage />,
       },
       {
-        path:"rumah",
+        path:"/rumah",
         element:<ProjectRumah/>
       },
       {

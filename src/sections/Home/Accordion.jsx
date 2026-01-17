@@ -41,14 +41,7 @@ export default function Accordion() {
         </h2>
       </div>
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 items-start">
-        {/* IMAGE SECTION */}
-        <div className="hidden lg:block lg:w-1/2">
-          <img
-            src="https://images.unsplash.com/photo-1503387762-592deb58ef4e"
-            alt="Konstruksi Bangunan"
-            className="w-full h-full object-cover rounded-2xl shadow-sm"
-          />
-        </div>
+        
 
         {/* ACCORDION SECTION */}
         <div className="w-full lg:w-1/2 space-y-4">
@@ -74,7 +67,7 @@ export default function Accordion() {
               <div
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${
                   open === index
-                    ? "max-h-[500px] opacity-100"
+                    ? "max-h-125 opacity-100"
                     : "max-h-0 opacity-0"
                 }`}
               >
@@ -84,6 +77,15 @@ export default function Accordion() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* IMAGE SECTION */}
+        <div className="hidden lg:block lg:w-1/2">
+          <img
+            src="https://images.unsplash.com/photo-1503387762-592deb58ef4e"
+            alt="Konstruksi Bangunan"
+            className="w-full h-full object-cover rounded-2xl shadow-sm"
+          />
         </div>
       </div>
     </div>
