@@ -16,14 +16,23 @@ const Address = () => {
                 CV Bumi Sari Hijau
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Jalan jalan dikota, senang bertemu anda, Rt 02 Rw 04 UH 12, Kota Semarang, Jawa Tengah
+                Jalan jalan dikota, senang bertemu anda, Rt 02 Rw 04 UH 12, Kota
+                Semarang, Jawa Tengah
               </p>
-              <button onClick={()=>window.open(urlMap) } className="px-5 py-2 bg-primary text-white rounded hover:bg-blue-800 transition shadow-lg transform hover:-translate-y-0.5 cursor-pointer">Buka Maps</button>
+
+              <button
+                onClick={() => window.open(urlMap)}
+                className="px-5 py-2 bg-primary text-white rounded hover:bg-blue-800 transition shadow-lg transform hover:-translate-y-0.5 cursor-pointer"
+              >
+                Buka Maps
+              </button>
             </div>
             <iframe
               title="lokasi"
               src={`${urlMap}`}
-              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
               className="w-full lg:w-[80%] h-[70vh] rounded-lg shadow-[0px_0px_10px_2px_#00000024]"
             />
           </div>
