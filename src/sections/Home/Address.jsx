@@ -18,7 +18,7 @@ const Address = () => {
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Jalan jalan dikota, senang bertemu anda, Rt 02 Rw 04 UH 12, Kota Semarang, Jawa Tengah
               </p>
-              <button onClick={()=>window.open(urlMap) } className="px-5 py-2 bg-primary text-white rounded hover:bg-blue-800 transition shadow-lg transform hover:-translate-y-0.5 cursor-pointer">Buka Maps</button>F
+              <button onClick={()=>window.open(urlMap) } className="px-5 py-2 bg-primary text-white rounded hover:bg-blue-800 transition shadow-lg transform hover:-translate-y-0.5 cursor-pointer">Buka Maps</button>
             </div>
             <iframe
               title="lokasi"
