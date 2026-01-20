@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { FaQuoteLeft } from "react-icons/fa";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const testimonials = [
   {
@@ -48,18 +51,23 @@ export default function TestimonialPage() {
 
   const prevSlide = () => {
     setCurrentIndex((prev) =>
-      prev === 0 ? testimonials.length - 1 : prev - 1
+      prev === 0 ? testimonials.length - 1 : prev - 1,
     );
   };
 
   const nextSlide = () => {
     setCurrentIndex((prev) =>
-      prev === testimonials.length - 1 ? 0 : prev + 1
+      prev === testimonials.length - 1 ? 0 : prev + 1,
     );
   };
 
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center px-4 py-10">
+      <div data-aos="fade-up">
       <div className="text-center mb-16">
         <h4 className="text-secondary font-bold uppercase tracking-wider mb-2">
           Testimoni
@@ -71,14 +79,17 @@ export default function TestimonialPage() {
 
       <div className="w-full max-w-6xl">
         {/* Desktop Grid */}
-        <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((item, index) => (
             <div
               key={index}
               className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition"
             >
-              <p className="text-gray-600 mb-4">“{item.text}”</p>
-              <h3 className="font-semibold text-gray-800">{item.name}</h3>
+              <span>
+                <FaQuoteLeft />
+              </span>
+              <p className="text-gray-600 my-4">“{item.text}”</p>
+              <h3 className="font-semibold text-gray-800">- {item.name}</h3>
             </div>
           ))}
         </div>
@@ -109,6 +120,7 @@ export default function TestimonialPage() {
             </button>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

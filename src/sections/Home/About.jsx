@@ -1,10 +1,14 @@
-import React from "react";
-
+import React, {useEffect} from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const About = () => {
+  useEffect(() => {
+    Aos.init();
+  },[])
   return (
     <>
       <section id="about" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4" data-aos="fade-up">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2 relative">
               <div className="relative rounded-lg overflow-hidden shadow-2xl">

@@ -1,7 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { FaChevronRight } from "react-icons/fa";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Accordion() {
   const [open, setOpen] = useState(null);
+
+  useEffect(()=> {
+    Aos.init();
+  },[])
 
   const items = [
     {
@@ -32,6 +39,7 @@ export default function Accordion() {
 
   return (
     <div className="min-h-screen bg-gray-50 px-4 py-12">
+      <div data-aos="fade-up">
       <div className="text-center mb-16">
         <h4 className="text-secondary font-bold uppercase tracking-wider mb-2">
           CV Bumi Sari Hijau
@@ -54,13 +62,14 @@ export default function Accordion() {
                 onClick={() => setOpen(open === index ? null : index)}
                 className="w-full flex justify-between items-center px-6 py-5 text-left focus:outline-none"
               >
-                <span className="font-medium text-gray-800">{item.title}</span>
+                
+                <span className="font-bold text-xl text-gray-800 ">{item.title}</span>
                 <span
                   className={`text-gray-500 transition-transform duration-300 ${
-                    open === index ? "rotate-45" : "rotate-0"
+                    open === index ? "rotate-90" : "rotate-0"
                   }`}
                 >
-                  +
+                  <FaChevronRight/>
                 </span>
               </button>
 
@@ -87,6 +96,7 @@ export default function Accordion() {
             className="w-full h-full object-cover rounded-2xl shadow-sm"
           />
         </div>
+      </div>
       </div>
     </div>
   );

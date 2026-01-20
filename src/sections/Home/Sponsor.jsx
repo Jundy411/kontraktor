@@ -1,6 +1,13 @@
-import React from "react";
+import React,{useEffect} from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Sponsor() {
+
+  useEffect(()=> {
+    Aos.init();
+  },[])
+
   const sponsors = [
     {
       id: 1,
@@ -31,6 +38,7 @@ export default function Sponsor() {
 
   return (
     <div className="w-full bg-gray-900 py-10">
+      <div data-aos="fade-up">
       <div className="text-center mb-16">
         <h4 className="text-secondary font-bold uppercase tracking-wider mb-2">
           Sponsor Kami
@@ -55,6 +63,7 @@ export default function Sponsor() {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </div>
   );
