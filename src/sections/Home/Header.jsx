@@ -25,7 +25,7 @@ const Header = () => {
         className="hero-pattern h-screen min-h-150  text-white relative z-20"
         style={backgrounds}
       >
-        <div className="flex items-center justify-center w-full h-screen bg-black/70 ">
+        <div className="flex items-center justify-center w-full h-screen bg-black/70 px-4 lg:px-1">
           <div
             data-aos="fade-up"
             className="container mx-auto text-center z-10"
