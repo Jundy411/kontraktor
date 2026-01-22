@@ -2,13 +2,26 @@ import React from "react";
 import Blank from "../Blank";
 import Footer from "../Footer";
 import ScrollTop from "../../content/ScrollTop";
+import { useNavigate } from "react-router-dom";
 const Arsitek = () => {
+  const navigate = useNavigate();
   return (
     <>
       <ScrollTop />
       <Blank />
       <section id="about" className="py-20 bg-white">
         <div className="container mx-auto px-4">
+          <div className=" mb-10">
+            <div className=" flex items-center gap-3 font-bold uppercase">
+              <span
+                className=" cursor-pointer"
+                onClick={() => navigate("/service")}
+              >
+                Layanan
+              </span>
+              / <span>Design & Arsitek</span>
+            </div>
+          </div>
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2 relative">
               <div className="relative rounded-lg overflow-hidden shadow-2xl">

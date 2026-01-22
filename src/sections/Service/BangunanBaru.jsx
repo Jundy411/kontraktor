@@ -2,14 +2,22 @@ import React from "react";
 import Blank from "../Blank";
 import Footer from "../Footer";
 import ScrollTop from "../../content/ScrollTop";
+import { useNavigate } from "react-router-dom";
 
 const BangunanBaru = () => {
+  const navigate = useNavigate();
   return (
     <>
       <ScrollTop />
       <Blank />
       <section id="about" className="py-20 bg-white">
         <div className="container mx-auto px-4">
+          <div className=" mb-10">
+            <div className=" flex items-center gap-3 font-bold uppercase">
+              <span className=" cursor-pointer" onClick={() => navigate("/service")}>Layanan</span>/{" "}
+              <span>Bangunan Baru</span>
+            </div>
+          </div>
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2 relative">
               <div className="relative rounded-lg overflow-hidden shadow-2xl">
@@ -34,10 +42,19 @@ const BangunanBaru = () => {
                 Membangun Bangunan Baru
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                <strong>CV Bumi Sari Hijau </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias obcaecati, iste blanditiis animi nisi beatae, sapiente, temporibus odio sunt voluptatem? Deserunt perferendis doloribus pariatur vitae odio esse sed aliquid error. Nisi quibusdam fuga facere? Reprehenderit laudantium non quam voluptatum provident consectetur quas architecto porro praesentium, maiores numquam vel dolores!
+                <strong>CV Bumi Sari Hijau </strong>Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Iure molestias obcaecati, iste
+                blanditiis animi nisi beatae, sapiente, temporibus odio sunt
+                voluptatem? Deserunt perferendis doloribus pariatur vitae odio
+                esse sed aliquid error. Nisi quibusdam fuga facere?
+                Reprehenderit laudantium non quam voluptatum provident
+                consectetur quas architecto porro praesentium, maiores numquam
+                vel dolores!
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, odio. Necessitatibus officia quam molestias autem, dolor porro minus omnis voluptate.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus,
+                odio. Necessitatibus officia quam molestias autem, dolor porro
+                minus omnis voluptate.
               </p>
 
               {/* <div className="grid grid-cols-2 gap-6">
@@ -60,7 +77,6 @@ const BangunanBaru = () => {
                   </div>
                 </div>
               </div> */}
-
             </div>
           </div>
         </div>
