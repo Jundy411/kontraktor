@@ -18,7 +18,7 @@ const GalleryPhoto = () => {
   return (
     <>
       <section className="py-20 bg-light">
-        <div className="container mx-auto px-4" data-aos="fade-up">
+        <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h4 className="text-secondary font-bold uppercase tracking-wider mb-2">
               Gallery Kami

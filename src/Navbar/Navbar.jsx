@@ -69,11 +69,11 @@ const Navbar = () => {
           id="mobile-menu"
           className={`${
             isOpen ? "block" : "hidden"
-          } md:hidden bg-white border-t absolute w-full shadow-xl`}
+          } md:hidden bg-black/30 backdrop-blur-md border-t absolute w-full shadow-xl`}
           onClick={handleBtn}
           // className="hidden md:hidden bg-white border-t absolute w-full shadow-xl"
         >
-          <div className="flex flex-col p-4 space-y-4 font-medium">
+          <div className="flex flex-col bg-white p-4 space-y-4 font-medium">
             <NavLink to={"/"}>
               <p className="mobile-link text-gray-600 hover:text-primary">
                 Beranda
@@ -107,6 +107,7 @@ const Navbar = () => {
               Hubungi Kami
             </p>
           </div>
+          <div className=" h-screen w-full"></div>
         </div>
       </nav>
       <Whatsapp />
