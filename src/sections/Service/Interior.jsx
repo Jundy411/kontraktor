@@ -55,10 +55,10 @@ const Interior = () => {
                 Interior Bangunan
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                <strong>CV Bumi Sari Hijau </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias obcaecati, iste blanditiis animi nisi beatae, sapiente, temporibus odio sunt voluptatem? Deserunt perferendis doloribus pariatur vitae odio esse sed aliquid error. Nisi quibusdam fuga facere? Reprehenderit laudantium non quam voluptatum provident consectetur quas architecto porro praesentium, maiores numquam vel dolores!
+                <strong>CV Bumi Sari Hijau </strong>Layanan interior kami berfokus pada penciptaan ruang yang nyaman, fungsional, dan estetis sesuai kebutuhan pengguna. Mulai dari rumah tinggal, kantor, hingga ruang komersial, kami merancang interior yang mencerminkan karakter dan gaya klien.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, odio. Necessitatibus officia quam molestias autem, dolor porro minus omnis voluptate.
+                Kami menangani seluruh proses interior, mulai dari perencanaan desain, pemilihan material, hingga pengerjaan detail. Dengan perpaduan desain yang modern dan pengerjaan yang rapi, kami memastikan setiap ruang memiliki nilai keindahan sekaligus kenyamanan maksimal.
               </p>
 
               {/* <div className="grid grid-cols-2 gap-6">

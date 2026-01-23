@@ -55,19 +55,10 @@ const Arsitek = () => {
                 Mendesain Arsitektur Bangungan
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                <strong>CV Bumi Sari Hijau </strong>Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Iure molestias obcaecati, iste
-                blanditiis animi nisi beatae, sapiente, temporibus odio sunt
-                voluptatem? Deserunt perferendis doloribus pariatur vitae odio
-                esse sed aliquid error. Nisi quibusdam fuga facere?
-                Reprehenderit laudantium non quam voluptatum provident
-                consectetur quas architecto porro praesentium, maiores numquam
-                vel dolores!
+                <strong>CV Bumi Sari Hijau </strong>Kami menyediakan layanan desain dan arsitektur yang mengutamakan keseimbangan antara estetika, fungsi, dan kenyamanan. Setiap desain dibuat berdasarkan kebutuhan klien, karakter bangunan, serta kondisi lahan, sehingga menghasilkan rancangan yang optimal dan berkarakter.Kami menyediakan layanan desain dan arsitektur yang mengutamakan keseimbangan antara estetika, fungsi, dan kenyamanan. Setiap desain dibuat berdasarkan kebutuhan klien, karakter bangunan, serta kondisi lahan, sehingga menghasilkan rancangan yang optimal dan berkarakter.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus,
-                odio. Necessitatibus officia quam molestias autem, dolor porro
-                minus omnis voluptate.
+                Tim arsitek kami akan membantu mulai dari konsep desain, gambar kerja, hingga visualisasi 3D. Dengan pendekatan profesional dan komunikatif, kami memastikan desain yang dihasilkan tidak hanya menarik secara visual, tetapi juga siap diwujudkan secara teknis.
               </p>
 
               {/* <div className="grid grid-cols-2 gap-6">

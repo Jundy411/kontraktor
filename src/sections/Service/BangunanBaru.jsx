@@ -50,19 +50,10 @@ const BangunanBaru = () => {
                 Membangun Bangunan Baru
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                <strong>CV Bumi Sari Hijau </strong>Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Iure molestias obcaecati, iste
-                blanditiis animi nisi beatae, sapiente, temporibus odio sunt
-                voluptatem? Deserunt perferendis doloribus pariatur vitae odio
-                esse sed aliquid error. Nisi quibusdam fuga facere?
-                Reprehenderit laudantium non quam voluptatum provident
-                consectetur quas architecto porro praesentium, maiores numquam
-                vel dolores!
+                <strong>CV Bumi Sari Hijau </strong>Kami menyediakan layanan pembangunan bangunan baru yang dikerjakan secara profesional, terencana, dan sesuai standar konstruksi. Mulai dari rumah tinggal, ruko, gedung perkantoran, hingga bangunan komersial lainnya, setiap proyek kami kerjakan dengan perhitungan teknis yang matang dan material berkualitas.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus,
-                odio. Necessitatibus officia quam molestias autem, dolor porro
-                minus omnis voluptate.
+                Tim kami akan mendampingi klien dari tahap perencanaan hingga bangunan siap digunakan. Dengan manajemen proyek yang rapi, transparan, dan tepat waktu, kami memastikan hasil bangunan kokoh, aman, serta sesuai dengan kebutuhan dan anggaran klien.
               </p>
 
               {/* <div className="grid grid-cols-2 gap-6">

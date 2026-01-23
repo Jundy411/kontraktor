@@ -55,19 +55,10 @@ const Sipil = () => {
                 Pekerjaan Teknik Sipil
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                <strong>CV Bumi Sari Hijau </strong>Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Iure molestias obcaecati, iste
-                blanditiis animi nisi beatae, sapiente, temporibus odio sunt
-                voluptatem? Deserunt perferendis doloribus pariatur vitae odio
-                esse sed aliquid error. Nisi quibusdam fuga facere?
-                Reprehenderit laudantium non quam voluptatum provident
-                consectetur quas architecto porro praesentium, maiores numquam
-                vel dolores!
+                <strong>CV Bumi Sari Hijau </strong>Layanan pekerjaan sipil kami mencakup berbagai pekerjaan konstruksi dasar seperti pondasi, struktur beton, drainase, jalan, dan infrastruktur pendukung lainnya. Setiap pekerjaan dilakukan sesuai standar teknis untuk menjamin kekuatan dan daya tahan jangka panjang.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus,
-                odio. Necessitatibus officia quam molestias autem, dolor porro
-                minus omnis voluptate.
+                Didukung oleh tenaga ahli dan peralatan yang memadai, kami memastikan setiap proyek sipil dikerjakan dengan presisi dan keselamatan kerja yang tinggi. Kami berkomitmen memberikan hasil terbaik yang menjadi dasar kuat bagi bangunan dan infrastruktur di atasnya.
               </p>
 
               {/* <div className="grid grid-cols-2 gap-6">

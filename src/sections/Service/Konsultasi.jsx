@@ -55,10 +55,10 @@ const Konsultasi = () => {
                 Menerima Konsultasi
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                <strong>CV Bumi Sari Hijau </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias obcaecati, iste blanditiis animi nisi beatae, sapiente, temporibus odio sunt voluptatem? Deserunt perferendis doloribus pariatur vitae odio esse sed aliquid error. Nisi quibusdam fuga facere? Reprehenderit laudantium non quam voluptatum provident consectetur quas architecto porro praesentium, maiores numquam vel dolores!
+                <strong>CV Bumi Sari Hijau </strong>Layanan konsultasi kami hadir untuk membantu klien dalam mengambil keputusan terbaik terkait pembangunan atau renovasi bangunan. Kami memberikan arahan teknis, estimasi biaya, serta solusi yang tepat sesuai kebutuhan dan kondisi proyek.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, odio. Necessitatibus officia quam molestias autem, dolor porro minus omnis voluptate.
+                Dengan pengalaman dan pemahaman mendalam di bidang konstruksi, kami siap menjadi mitra terpercaya sejak tahap awal perencanaan. Konsultasi yang kami berikan bertujuan meminimalkan risiko, mengoptimalkan anggaran, dan memastikan proyek berjalan lancar sesuai rencana.
               </p>
 
               {/* <div className="grid grid-cols-2 gap-6">
