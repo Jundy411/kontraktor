@@ -9,7 +9,7 @@ const Address = () => {
   }, []);
 
   const urlMap =
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.9629145816643!2d109.02071148466682!3d-6.849019536625204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb03eff414865%3A0x1e022dbfad8faf39!2sINDOMARET%20SAWOJAJAR!5e1!3m2!1sen!2sid!4v1768445302941!5m2!1sen!2sid";
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.9629145816643!2d109.02071148466682!3d-6.849019536625204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb03eff414865%3A0x1e022dbfad8faf39!2sINDOMARET%20SAWOJAJAR!5e1!3m2!1sen!2sid!4v1768445302941!5m2!1sen!2sidhttps://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3308.122923562372!2d111.0336475749935!3d-6.577773593415683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMzQnNDAuMCJTIDExMcKwMDInMTAuNCJF!5e1!3m2!1sen!2sid!4v1769569727227!5m2!1sen!2sid";
   return (
     <>
       <section id="about" className="py-20 bg-light">
@@ -41,13 +41,22 @@ const Address = () => {
                       onClick={() => window.open(urlMap)}
                       className=" w-37.5 px-5 py-2 bg-[#EA4335] flex justify-center items-center gap-1 text-white rounded transition shadow-lg cursor-pointer "
                     >
-                      <span><FaMapMarkerAlt/></span>Maps
+                      <span>
+                        <FaMapMarkerAlt />
+                      </span>
+                      Maps
                     </button>
                     <button className=" w-37.5 px-5 py-3 flex justify-center items-center gap-1 bg-blue-800 text-white rounded shadow-lg cursor-pointer">
-                      <span><FaFacebookSquare/></span>Facebook
+                      <span>
+                        <FaFacebookSquare />
+                      </span>
+                      Facebook
                     </button>
                     <button className="w-37.5 px-5 py-2 flex justify-center items-center gap-1 bg-black text-white rounded  shadow-lg  cursor-pointer">
-                      <span><FaTiktok/></span>Tik tok
+                      <span>
+                        <FaTiktok />
+                      </span>
+                      Tik tok
                     </button>
                   </div>
                 </div>
