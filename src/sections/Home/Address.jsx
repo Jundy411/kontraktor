@@ -19,6 +19,7 @@ const Address = () => {
               <h4 className="text-secondary font-bold uppercase tracking-wider mb-2">
                 Lokasi Kami
               </h4>
+
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark mb-10">
                 CV Bumi Sari Hijau
               </h2>

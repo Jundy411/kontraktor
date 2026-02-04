@@ -1,6 +1,11 @@
 import React,{useEffect} from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Sponsor1 from '../../assets/tiga-roda.png';
+import Sponsor2 from '../../assets/besi-baja.png';
+import Sponsor3 from '../../assets/waskita.png';
+import Sponsor4 from '../../assets/holcim.png';
+import Sponsor5 from '../../assets/garuda.png'
 
 export default function Sponsor() {
 
@@ -11,28 +16,28 @@ export default function Sponsor() {
   const sponsors = [
     {
       id: 1,
-      name: "Google",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+      name: "Tiga Roda",
+      logo: Sponsor1,
     },
     {
       id: 2,
-      name: "Microsoft",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
+      name: "Besi Baja Murah",
+      logo: Sponsor2,
     },
     {
       id: 3,
-      name: "Apple",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+      name: "Waskita",
+      logo: Sponsor3,
     },
     {
       id: 4,
-      name: "Amazon",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+      name: "Holcim",
+      logo: Sponsor4,
     },
     {
       id: 5,
-      name: "Adidas",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg",
+      name: "Garuda Besi",
+      logo:Sponsor5,
     },
   ];
 

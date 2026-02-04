@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate, NavLink, Outlet } from "react-router-dom";
-import { FaBars, FaBuilding } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import Whatsapp from "../sections/Whatsapp";
 import logo1 from '../assets/logo1.png'
 const Navbar = () => {
